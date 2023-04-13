@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro de Vendas</title>
+</head>
+<body>
+    <h1>Formulário de Cadastro de Vendas</h1>
+
+    <form action="https://www.w3schools.com/action_page.php" method="get">
+        <label for="nome"><b> Nome do Vendedor: </b></label>
+        <select name="nome" id="nome">
+            <option value="João">João</option>
+            <option value="José">José</option>
+            <option value="Juca">Juca</option>
+            <option value="Marcos">Marcos</option>
+            </select> <br/>
+       
+        <p><b>Qual o canal de venda utilizado?</b></p>
+        <input type="radio" id="presencial" name="canal_de_venda" value="presencial">
+        <label for="presencial">Presencial</label> 
+        <input type="radio" id="whatsapp" name="canal_de_venda" value="whatsapp">
+        <label for="whatsapp">Whatsapp</label>
+        <input type="radio" id="email" name="canal_de_venda" value="email">
+        <label for="email">Email</label>
+        <input type="radio" id="telefone" name="canal_de_venda" value="telefone">
+        <label for="telefone">Telefone</label>
+        <br/><br/>
+        
+        <label for="arq1"><b>Anexe o Comprovante de Venda:</b> </label>  
+        <input type="file" id="arq1" name="arq1" accept="file/pdf"> 
+        <br/><br/>
+        
+        <label for="descricao"><b> Itens Vendidos: </b></label>,<br/>
+        <textarea id="descricao" name="descricao" rows="5" cols="50" required>   
+        </textarea>    
+        <br/><br/>
+
+        <label for="client_name"><b> Nome do Cliente: </b></label>
+        <input type="text" id="client_name" name="client_name" placeholder="Digite o nome do cliente" required>
+
+        <label for="cpf"><b> CPF do Cliente: </b></label>
+        <input type="text" id="cpf" name="cpf" maxlenght="11" placeholder="Digite o CPF do cliente" required>
+        <br/><br/>
+
+        <input type="checkbox" id="verdade" name="verdade" value="verdade" required>
+        <label for="verdade"> <b> Declaro que as informações são verdadeiras </b> </label>
+        <br/><br/>
+        
+        
+        <label for="senha"><b>Digite sua senha:</b></label>
+        <input type="password" id="senha" name="senha" value="senha" required>
+        
+        <br/><br/>
+
+        <input type="submit">
+      
+</form>    
+</body>
+</html>

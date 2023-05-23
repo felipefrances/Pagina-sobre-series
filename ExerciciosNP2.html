@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Aba Exercício</title>
+    <style>
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 5px;
+      }
+
+      
+    </style>
+  </head>
+  <body>
+    <h4>Listas não ordenadas</h4>
+
+    <ul style="list-style-type: circle">
+      <li>Círculo 1</li>
+      <li>Círculo 2</li>
+      <li>Círculo 3</li>
+    </ul>
+
+    <ul style="list-style-type: square">
+      <li>Quadrado 1</li>
+      <li>Quadrado 2</li>
+      <li>Quadrado 3</li>
+    </ul>
+
+    <ul style="list-style-type: disc">
+      <li>Padrão 1</li>
+      <li>Padrão 2</li>
+      <li>Padrão 3</li>
+    </ul>
+
+    <ul style="list-style-type: none">
+      <li>Nada 1</li>
+      <li>Nada 2</li>
+      <li>Nada 3</li>
+    </ul>
+
+    <h4>Listas ordenadas</h4>
+
+    <ol type="1">
+      <li>Numérico (padrão) 1</li>
+      <li>Numérico (padrão) 2</li>
+      <li>Numérico (padrão) 3</li>
+    </ol>
+
+    <ol type="A">
+      <li>Letra Maiúscula 1</li>
+      <li>Letra Maiúscula 2</li>
+      <li>Letra Maiúscula 3</li>
+    </ol>
+
+    <br />
+
+    <ol type="a">
+      <li>Letra minúscula 1</li>
+      <li>Letra minúscula 2</li>
+      <li>Letra minúscula 3</li>
+    </ol>
+
+    <br />
+
+    <ol type="i">
+      <li>Romano minúsculo 1</li>
+      <li>Romano minúsculo 2</li>
+      <li>Romano minúsculo 3</li>
+    </ol>
+
+    <br />
+
+    <ol type="I">
+      <li>Romano maiúsculo 1</li>
+      <li>Romano maiúsculo 2</li>
+      <li>Romano maiúsculo 3</li>
+    </ol>
+
+    <h4>Listas dentro de outras listas</h4>
+
+    <ul>
+      <li>item 1</li>
+
+      <ol start="5">
+        <li>Aqui começa direto do numero 5 da lista. "start = 5"</li>
+        <li>Número 6</li>
+
+        <ol type="a" start="6">
+          <li>
+            Aqui a lista começa da letra f - É preciso usar start = "número
+            correspondente à letra"
+          </li>
+          <li>Letra G</li>
+        </ol>
+      </ol>
+    </ul>
+
+    <h4>TABELAS *** IMPORTANTE PRA PROVA</h4>
+    <p>Definido pela tag "table"</p>
+    <p><mark>Linhas</mark> são definidas pela tag "tr" (bizu: tr = to right)</p>
+    <p>
+      <mark>Colunas</mark> são definidas pela tag
+      <mark>"td" (bizu: td = to down)</mark>
+    </p>
+    <p>
+      <mark>Cabeçalho</mark> apenas no cabeçalho usamos a tag "th" (bizu: th =
+      to headline)
+    </p>
+    <p>
+      O preenchimento da tabela em html é preenchida sempre por linha. abre a
+      tag tr e dentro dela coloca os dados da coluna, com a tag td dentro de
+    </p>
+
+    <h5>Tabela de exemplo</h5>
+    <table>
+      <tr>
+        <th>Cabeçalho de linha 1</th>
+        <th colspan="2">Cabeçalho de linha 2 com mescla de colunas: colspan</th>
+        
+      </tr>
+
+        <tr>
+        <td rowspan="2">(Linha 1 coluna 1)</td>
+        <td>(Linha 1 coluna 2)</td>
+        </tr>
+        
+    </table>
+
+    <h5>
+      Tabela Vertical - Cabeçalho em colunas - uso de bordas com style = "border
+      px solid"
+    </h5>
+    <p>Basta em cada início de preenchimento da linha usar a tag th</p>
+    <p>
+      uso da propriedade border-colapse para tirar a borda dupla e fundir em uma
+      - caso contrário cada célula terá sua borda
+    </p>
+
+    <table>
+      <tr>
+        <th>Cabeçalho 1 </th>
+        <td>coluna 2 com mescla de linhas: rowspan</td>
+        <td>coluna 3</td>
+      </tr>
+    </table>
+  </body>
+</html>

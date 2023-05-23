@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bem vindo ao FIInvest</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .row::after {
+        content: "";
+        clear: both;
+        
+      }
+
+      [class*="col-"] {
+        float: left;
+        padding: 20px;
+      }
+
+      @media only screen and (min-width: 768px) {
+
+      .col-1 {width: 8.33%;}
+      .col-2 {width: 16.66%;}
+      .col-3 {width: 25%;}
+      .col-4 {width: 33.33%;}
+      .col-5 {width: 41.66%;}
+      .col-6 {width: 50%;}
+      .col-7 {width: 58.33%;}
+      .col-8 {width: 66.66%;}
+      .col-9 {width: 75%;}
+      .col-10 {width: 83.33%;}
+      .col-11 {width: 91.66%;}
+      .col-12 {width: 100%;}
+      }
+      
+      @media only screen and (max-width: 768px) {
+        /* Para telas pequenas: */
+        [class*="col-"] {
+          width: 100%;
+        }
+      }
+/* Para celulares: */
+[class*="col-"] {
+width: 100%;
+}
+
+    @media only screen and (min-width: 600px) {
+        /* Para tablets: */
+        .col-s-1 {width: 8.33%;}
+        .col-s-2 {width: 16.66%;}
+        .col-s-3 {width: 25%;}
+        .col-s-4 {width: 33.33%;}
+        .col-s-5 {width: 41.66%;}
+        .col-s-6 {width: 50%;}
+        .col-s-7 {width: 58.33%;}
+        .col-s-8 {width: 66.66%;}
+        .col-s-9 {width: 75%;}
+        .col-s-10 {width: 83.33%;}
+        .col-s-11 {width: 91.66%;}
+        .col-s-12 {width: 100%;}
+}
+
+      .header {
+        background-color: black;
+        color: white;
+        padding: 20px;
+      }
+
+      .menu ul {
+        list-style-type: none;
+      }
+
+      .menu li {
+        padding: 8px;
+        margin-bottom: 7px;
+        background-color: orange;
+        color: white;
+        display: inline;
+      }
+
+      .menu li:hover {
+        background-color: orangered;
+      }
+      .aside {
+        background-color: orange;
+        padding: 15px;
+        color: white;
+        text-align: center;
+        font-size: 14px;
+      }
+
+      html {
+font-family: "Lucida Sans", sans-serif;
+}
+
+#header {
+background-color: #000000;
+color: #ffffff;
+padding: 20px;
+}
+
+#menu ul {
+margin: 20px 0 0 20px;
+list-style-type: none;
+}
+#menu li {
+padding: 10px;
+margin-bottom: 7px;
+background-color: #f47e00;
+color: #ffffff;
+}
+
+#menu li:hover {
+background-color: #cc0000;
+font-weight: bold;
+}
+
+#content {
+padding: 15px 0px 0px 15px;
+}
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>FIInvest</h1>
+    </div>
+
+    
+    <div class="row">
+      <div class="col-3 menu">
+        <ul>
+          <li><img src="livro_png.png" width="30%"></li>
+          <li><img src="livro_png.png" width="30%"></li>
+          <li><img src="livro_png.png" width="30%"></li>
+          <li>Opção Menu 4</li>
+        </ul>
+      </div>
+
+      <div class="col-6">
+        <h1>Texto principal</h1>
+        <p>Texto principal do site</p>
+      </div>
+
+      <div class="col-3 right">
+        <div class="aside">
+          <h2>Informações adicionais 1</h2>
+          <p>Texto adicional 1</p>
+
+          <h2>Informações adicionais 2</h2>
+          <p>Texto adicional 2</p>
+
+          <h2>Informações adicionais 3</h2>
+          <p>Texto adicional 3</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

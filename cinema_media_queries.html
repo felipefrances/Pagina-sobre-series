@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Séries imperdíveis</title>
+    <style>
+      @media screen and (min-width: 400px) {
+        body {
+          background-color: yellow;
+        }
+      }
+
+      @media screen and (min-width: 800px) {
+        body {
+          background-color: blueviolet;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      .row::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      [class*="col-"] {
+        float: left;
+      }
+
+      /* Para telas pequenas: */
+      [class*="col-"] {
+        width: 100%;
+      }
+
+      @media only screen and (min-width: 600px ) {
+        /* Para tablets: */
+        
+        .col-s-1 {width: 8.33%;}
+        .col-s-2 {width: 16.66%;}
+        .col-s-3 {width: 25%;}
+        .col-s-4 {width: 33.33%;}
+        .col-s-5 {width: 41.66%;}
+        .col-s-6 {width: 50%;}
+        .col-s-7 {width: 58.33%;}
+        .col-s-8 {width: 66.66%;}
+        .col-s-9 {width: 75%;}
+        .col-s-10 {width: 83.33%;}
+        .col-s-11 {width: 91.66%;}
+        .col-s-12 {width: 100%;}
+      }
+
+      @media only screen and (min-width: 768px) {
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+      }
+
+      @media only screen and (min-width: 600px) and (max-width: 767px) {
+        /* Sem imagens Para tablets: */
+        
+        img {
+        display: none;
+        }
+    }
+
+      @media print {
+                h1 {
+                color: black;
+                }
+
+                body {
+                    background-color: white;
+                }
+
+                #hidePrint {
+                display: none;
+                }
+        }
+
+
+      .poster {
+        width: 30%;
+        height: 30%;
+        padding: 0.1%;
+        margin-left: 35%;
+      }
+
+      h1,
+      h2 {
+        font-weight: bold;
+        color: black;
+        text-align: center;
+        margin-bottom: 5%;
+        margin-top: 5%;
+      }
+
+      #header {
+        background-color: darkslateblue;
+        padding: 1%;
+        size-adjust: 2%;
+        margin: 0%;
+      }
+
+      #nav {
+        background-color: darkgrey;
+        margin: 0%;
+        font-family: "Montserrat", sans-serif;
+        margin-bottom: 5%;
+      }
+
+      ul {
+        margin: 0px;
+      }
+
+      .li {
+        display: inline;
+        font-family: "Montserrat", sans-serif;
+        font-size: small;
+      }
+
+      .link {
+        color: black;
+        text-decoration: none;
+      }
+
+      .link:hover {
+        color: blue;
+      }
+
+      .logo {
+        width: 4%;
+        height: 4%;
+        color: beige;
+      }
+
+      p {
+        text-align: justify;
+        margin-bottom: 5%;
+        padding: 2%;
+      }
+
+      .inline-block {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <a href="#">
+        <img src="medalha.svg" alt="logo do séries imperdíveis" class="logo" />
+      </a>
+    </div>
+
+    <div id="nav">
+      <ul>
+        <li class="li"><a href="#" class="link">Séries BR</a></li>
+        <li class="li"><a href="#" class="link">| Séries US</a></li>
+        <li class="li"><a href="#" class="link">| Animes</a></li>
+      </ul>
+    </div>
+
+    <main>
+      <h1>Três séries imperdíveis para maratonar nas férias</h1>
+
+      <div class="row">
+        <div class="col-4 col-s-4">
+          <a
+            href="https://tv.apple.com/br/show/ted-lasso/umc.cmc.vtoh0mn0xn7t3c643xqonfzy"
+          >
+            <img src="ted_lasso.jpg" alt="Série: Ted Lasso" class="poster" />
+          </a>
+          <h2>Ted Lasso</h2>
+          <p>
+            Jason Sudeikis é Ted Lasso, treinador de um pequeno time de futebol
+            americano de faculdade da cidade de Kansas contratado para ser o
+            técnico de um time de futebol profissional na Inglaterra, apesar da
+            falta de experiência.
+          </p>
+        </div>
+
+        <div class="col-4 col-s-4">
+          <a
+            href="https://www.hbomax.com/br/pt/series/urn:hbo:series:GZAZHkgS32aXCwgEAAANK"
+          >
+            <img
+              src="amor_e_morte.jpg"
+              alt="Série: Amor e morte"
+              class="poster"
+            />
+          </a>
+          <h2>Amor e Morte</h2>
+          <p>
+            Candy é uma dona de casa pacata que, do dia para a noite, resolve
+            ter um caso com seu vizinho. Mas a relação logo sai do controle
+            quando a mulher de seu amante é encontrada morta e todas as
+            suspeitas caem sobre Candy.
+          </p>
+        </div>
+
+        <div class="col-4 col-s-4">
+          <a href="https://www.apple.com/br/tv-pr/originals/silo/">
+            <img src="O_silo.jpg" alt="Série: O silo" class="poster" />
+          </a>
+          <h2>O Silo</h2>
+          <p>
+            Silo conta a história das últimas dez mil pessoas na Terra, do silo
+            subterrâneo que as protege e do mundo mortal no lado de fora. Mas
+            ninguém sabe quando ou por que o silo foi construído, e qualquer
+            pessoa que tenta descobrir o motivo sofre consequências fatais.
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
